@@ -16,7 +16,7 @@ MonoBehaviour:
     ufoLicenseKey: QVFjbjFHMy8vLy8vQUFBQUtBNU9QZkxPajBpMGxXMW15djQ3eDlFclN1YXVJRWVxaTROVVliRzZxSDhJaXlSZ1hMN3pHQ0xoOWxXcGhqN01kTHJ2czFxMG5WRnRCWGUzclg0L0ZKTkZVMkQ3UDhGc3QxelVSaUFNajdiYWlNcG1SMnZLeDBrS09yb0RiRitta0RRUFNxWndHMlJldXJra1pzT2F1YVlqbmpCTkJsdHk3SmFSMFhGQ1ZjWVRRdjhMR1NpR05uVHZkdVJLSktnYnR3N3A0UWQ3ZG5JLzhmbkhzNk5LSm1lNi82dDJzLzdtOUltdklTZGEreXpVQ25kdXNHN2d4bERMUTZSWko0NlJEY0txVEF5aDIzMjRWS3VPSE9HUUhzZWNoTVprQk0zSm5Fb0tJNEpTNTV5L0hLVi9JSDY2eHUxQ0FpclQzN24zY01RdmR4TUlQK2J6dG13ZGxlVjJKR3B0L3ozMEV6VFBVTHBUdEdzQzJRY3M=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 1
+    maxSimultaneousImageTargets: 2
     maxSimultaneousObjectTargets: 1
     useDelayedLoadingObjectTargets: 0
     cameraDirection: 0
@@ -46,10 +46,12 @@ MonoBehaviour:
     dataSetsToLoad:
     - VuforiaMars_Images
     - VuforiaMars_VuMark
+    - Image_targets
     - VuforiaMars_Object_OT
     dataSetsToActivate:
     - VuforiaMars_Images
     - VuforiaMars_VuMark
+    - Image_targets
   videoBackground:
     clippingMode: 0
     numDivisions: 2
@@ -69,7 +71,7 @@ MonoBehaviour:
     autoInitTracker: 0
     autoStartTracker: 0
   webcam:
-    deviceNameSetInEditor: 'USB-kamera #2'
+    deviceNameSetInEditor: Logitech HD Webcam C310
     flipHorizontally: 0
     turnOffWebCam: 0
     renderTextureLayer: 30
