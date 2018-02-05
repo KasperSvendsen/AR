@@ -5,8 +5,8 @@ using UnityEngine;
 public class Collision : MonoBehaviour {
 
     public GameObject meteor; //Public so it can be reached outside script
+    public ParticleSystem explosion;
 
-    //private Vector3 positionOffset;
     private double dist;
     private double radius; 
 
@@ -15,23 +15,24 @@ public class Collision : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-
+        explosion.Pause();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //positionOffset = transform.position - meteor.transform.position; //Position offset between earth and meteor
+
         float dist = Vector3.Distance(meteor.transform.position, transform.position);
         radius = transform.localScale.x + meteor.transform.localScale.x; //scale offset
 
-        print("dist" + dist);
+        //print("dist" + dist);
         //print("radius" + radius); ==1.21
 
 
-        if(dist <= radius)// scaleOffset.magnitude)
+        if(dist <= 3.7)//radius)
         {
             print("Collision!");
+            explosion.Play();
         };
 
     }
