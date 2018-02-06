@@ -10,6 +10,7 @@ public class Collision : MonoBehaviour {
     private double dist;
     private double radius; 
 
+    
 
 
     // Use this for initialization
@@ -22,14 +23,14 @@ public class Collision : MonoBehaviour {
     void Update()
     {
 
-        float dist = Vector3.Distance(meteor.transform.position, transform.position);
-        radius = transform.localScale.x + meteor.transform.localScale.x; //scale offset
+        dist = Vector3.Distance(meteor.transform.position, transform.position);
+        radius = transform.lossyScale.x + meteor.transform.lossyScale.x; //scale offset
 
         //print("dist" + dist);
-        //print("radius" + radius); ==1.21
+        //print("radius" + radius); 
 
 
-        if(dist <= 3.7)//radius)
+        if(dist <= radius)
         {
             print("Collision!");
             explosion.Play();
